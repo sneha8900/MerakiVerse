@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/jpeg" href="pics/mer.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <title>Meraki.Verse</title>
+</head>
+
+<body>
+
+    <h1>
+        Meraki.Verse
+    </h1>
+
+    <div class="topnav">
+        <a href="drawings.html">Drawings</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </div>
+
+    <b><h1>About Me</h1></b>
+    <div class="slideshow">
+        <img class="slide" src="pics/mer.jpeg" alt="">
+        <img class="slide" src="pics/dr3.jpeg" alt="" />
+        <img class="slide" src="pics/dr2.jpeg" alt="">
+        <img class="slide" src="pics/des1.png" alt="">  
+  
+      </div>
+
+    <div id="about ">
+        <br>
+        <hr>
+        <h2 class="one "> A little about me.</h2>
+        <h3>Welcome to my art page!<br> I am Sneha Satish and I focus on creating Mandala art. That is my form of meraki.<br> These are neat strokes of amazing art that will bloom your wall!!</h3>
+        <hr>
+        <h2 class="two ">What does Meraki mean?</h2>
+        <h3>This is a word that modern Greeks often use to desribe doing something<br> with soul, creativity or love - when you put "something of yourself " <br>into what you're doing, whatever it may be.</h3>
+        <hr>
+        <h2 class="three ">What is Mandala?</h2>
+        <h3>Mandala is a spiritual and ritual symbol in Hinduism and Buddhism, representing the universe. <br>The circular designs symbolizes the idea that life is never ending and everything is connected. <br>The mandala also represents spiritual journey within
+            the individual viewer. The first level is <br>understanding the unity in cosmos and the second level is that each individual must find <br>their own place within it. Mandala designs are meant to remove irritating thoughts<br> and allow the creative mind
+            to run free as well as relaxation. But ultimately <br>people create and look at mandalas to centre the body and mind.</h3>
+        <h2 class="four ">So what you waiting for? Grab the art work that you love!!</h2>
+
+        <hr>
+        <center>
+            <h3>All Rights Reserved.</h3>
+        </center>
+        <hr>
+<script>
+        var Slides = document.getElementsByClassName("slide");
+var NoSlides = Slides.length;
+var currentSlide = 0;
+
+function IncreamentSlide() {
+  currentSlide = currentSlide + 1;
+  currentSlide = currentSlide % NoSlides;
+}
+
+function displayCurrent() {
+  Slides[currentSlide].style.display = "block";
+}
+
+function hideall() {
+  for (i = 0; i < NoSlides; i++) {
+    Slides[i].style.display = "none";
+  }
+}
+function main() {
+  hideall();
+  displayCurrent();
+  IncreamentSlide();
+}
+main();
+setInterval(main, 2000);
+</script>
+</body>
+
+</html>

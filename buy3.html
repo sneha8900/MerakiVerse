@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="shortcut icon" type="image/jpeg" href="pics/mer.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+</head>
+
+<body>
+    <div>
+        <div id="cen">
+            <span>
+                <a href="index.html" class="newb">Home</a></span>
+            <span>
+                <a href="dr3.html" class="newb">Back</a></span>
+        </div>
+        <div class="login-container">
+
+            <div class="header">
+                <h2>Payment Details</h2>
+            </div>
+            <form id="form" class="form">
+
+                <div class="form-control">
+                    <label for="fname">First Name</label>
+                    <input type="name" placeholder="Enter First name" id="fname" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="fname">Last Name</label>
+                    <input type="text" placeholder="Enter Last name" id="lname" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="fname">Contact Number</label>
+                    <input type="tel" placeholder="Enter Number" id="number" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <h2><b>Address:<br></b></h2>
+                <div class="form-control">
+                    <label for="fname">Street</label>
+                    <input type="street" placeholder="Enter Street" id="street" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="landmark">Landmark</label>
+                    <input type="street" placeholder="Enter Landmark" id="landmark" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="city">City</label>
+                    <input type="street" placeholder="Enter City" id="city" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="state">State</label>
+                    <input type="street" placeholder="Enter State" id="state" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="zip">Zip</label>
+                    <input type="street" placeholder="Enter Zip" id="zip" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="country">Country</label>
+                    <input type="street" placeholder="Enter Country" id="country" />
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+                <div>
+                    <h2>Payment Type:</h2><img src="https://img.icons8.com/color/36/000000/visa.png"> <img
+                        src="https://img.icons8.com/color/36/000000/mastercard.png"> <img
+                        src="https://img.icons8.com/color/36/000000/amex.png"><br>
+                    <br><b><input id="pmethod" type="radio" name="type" value="1" checked> Credit & Debit
+                        Card<br><br></b>
+
+                    <div class="form-control">
+                        <label for="name">Name on Card</label>
+                        <input type="text" placeholder="Enter Name" id="cname" />
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="ccnum">Card Number</label>
+                        <input placeholder="•••• •••• •••• ••••" type="text" size="19" name="ccnum" id="cc-num">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="expiry">Expiration</label>
+                        <input placeholder="•• / ••" size="7" type="text" name="expiry" id="cc-exp">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="cv">CV</label>
+                        <input placeholder="••••" size="4" type="password" name="cvc" id="cc-cv">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+                </div>
+                <b>
+                    <input type="radio" name="type" value="2">COD<br>
+                </b>
+                <h3 class="diff">Amount: Rs 3500</h3>
+                <button>Submit</button></a>
+            </form>
+        </div>
+        <script>
+            const form = document.getElementById('form');
+            const fname = document.getElementById('fname');
+            const lname = document.getElementById('lname');
+            const number = document.getElementById('number');
+            const street = document.getElementById('street');
+            const landmark = document.getElementById('landmark');
+            const city = document.getElementById('city');
+            const state = document.getElementById('state');
+            const zip = document.getElementById('zip');
+            const country = document.getElementById('country');
+            const cname = document.getElementById('cname');
+            const cc_num = document.getElementById('cc-num');
+            const cc_exp = document.getElementById('cc-exp');
+            const cc_cv = document.getElementById('cc-cv');
+
+
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+
+                checkInputs();
+            });
+
+            function checkInputs() {
+                const fnameValue = fname.value.trim();
+                const lnameValue = lname.value.trim();
+                var temp = true;
+                const numberValue = number.value.trim();
+                const streetValue = street.value.trim();
+                const landmarkValue = landmark.value.trim();
+                const cityValue = city.value.trim();
+                const stateValue = state.value.trim();
+                const zipValue = zip.value.trim();
+                const countryValue = country.value.trim();
+                const cnameValue = cname.value.trim();
+                const cc_numValue = cc_num.value.trim();
+                const cc_expValue = cc_exp.value.trim();
+                const cc_cvValue = cc_cv.value.trim();
+
+                if (fnameValue === '') {
+                    temp = false;
+                    setErrorFor(fname, 'This field cannot be blank');
+                } else {
+                    setSuccessFor(fname);
+                }
+
+                if (lnameValue === '') {
+                    temp = false;
+                    setErrorFor(lname, 'This field cannot be blank');
+                } else {
+                    setSuccessFor(lname);
+                }
+
+
+                if (numberValue === '') {
+                    temp = false;
+                    setErrorFor(number, 'Number cannot be blank');
+                } else if (!isNumber(numberValue)) {
+                    setErrorFor(number, 'Not a valid number');
+                    temp = false;
+                } else {
+                    setSuccessFor(number);
+                }
+
+                if (streetValue === '') {
+                    temp = false;
+                    setErrorFor(street, 'This field cannot be blank');
+                } else {
+                    setSuccessFor(street);
+                }
+
+                if (landmarkValue === '') {
+                    temp = false;
+                    setErrorFor(landmark, 'This field cannot be blank');
+                } else {
+                    setSuccessFor(landmark);
+                }
+
+                if (cityValue === '') {
+                    temp = false;
+                    setErrorFor(city, 'This field cannot be blank');
+                } else {
+                    setSuccessFor(city);
+                }
+
+                if (stateValue === '') {
+                    temp = false;
+                    setErrorFor(state, 'This field cannot be blank');
+                } else {
+                    setSuccessFor(state);
+                }
+
+                if (countryValue === '') {
+                    temp = false;
+                    setErrorFor(country, 'This field cannot be blank');
+                } else {
+                    setSuccessFor(country);
+                }
+
+                if (zipValue == '') {
+                    temp = false;
+                    setErrorFor(zip, 'This field cannot be blank');
+                }
+                else if (!isZip(zipValue)) {
+                    temp = false;
+                    setErrorFor(zip, 'Not a valid zip');
+                }
+                else {
+                    setSuccessFor(zip);
+                }
+                if (document.getElementById('pmethod').checked) {
+                    if (cnameValue === '') {
+                        temp = false;
+                        setErrorFor(cname, 'This field cannot be blank');
+                    } else {
+                        setSuccessFor(cname);
+                    }
+
+                    if (cc_numValue == '') {
+                        temp = false;
+                        setErrorFor(cc_num, 'This field cannot be blank  ');
+                    }
+                    else if (!isccnum(cc_numValue)) {
+                        temp = false;
+                        setErrorFor(cc_num, 'Not a valid Card Number');
+                    }
+                    else {
+                        setSuccessFor(cc_num);
+                    }
+
+                    if (cc_expValue === '') {
+                        temp = false;
+                        setErrorFor(cc_exp, 'This field cannot be blank');
+                    } else {
+                        setSuccessFor(cc_exp);
+                    }
+
+                    if (cc_cvValue == '') {
+                        temp = false;
+                        setErrorFor(cc_cv, 'This field cannot be blank  ');
+                    }
+                    else if (!isccv(cc_cvValue)) {
+                        temp = false;
+                        setErrorFor(cc_cv, 'Not a valid CV');
+                    }
+                    else {
+                        setSuccessFor(cc_cv);
+                    }
+                }
+
+                if (temp) {
+                    window.location.href = "submit.html";
+                }
+            }
+
+            function setErrorFor(input, message) {
+                const formControl = input.parentElement;
+                const small = formControl.querySelector('small');
+                formControl.className = 'form-control error';
+                small.innerText = message;
+            }
+
+            function setSuccessFor(input) {
+                const formControl = input.parentElement;
+                formControl.className = 'form-control success';
+            }
+
+            function isEmail(email) {
+                return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+            }
+
+            function isNumber(number) {
+                return /^[0-9]{10}$/.test(number);
+            }
+
+            function isZip(zip) {
+                return /^[0-9]{6}$/.test(zip);
+            }
+
+            function isccnum(cc_num) {
+                return /^[0-9]{16}$/.test(cc_num);
+            }
+
+            function isccv(cc_cv) {
+                return /^[0-9]{4}$/.test(cc_cv);
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>
